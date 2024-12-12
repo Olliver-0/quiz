@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+header {
+    padding: 15px;
+    justify-content: center;
+}
+
+h1 {
+    font: normal 700 2.8em PoetsenOne;
+    letter-spacing: 3px;
+}
+
+aside {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 80%;
+    height: 40px;
+}
+
+div#exProgressBar {
+    width: 100%;
+    height: 25px;
+    border-radius: 25px;
+}
+  
+div#inProgressBar {
+    width: 0%;
+    height: 25px;
+    border-radius: 25px;
+}
+
+main {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 45px;
+    padding: 15px 15px 5px 15px;
+    border-radius: 20px;
+}
+
+section.containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#ask {
+    padding-bottom: 15px;
+}
+
+h2 {
+    padding-bottom: 15px;
+    font: normal bold 1.8em RobotoSlab;
+}
+
+p.question {
+    font: normal bold 1.1em Rubik;
+    text-wrap: wrap;
+}
+
+button.options {
+    width: 80%;
+    height: 55px;
+    margin: 10px;
+    padding: 9px;
+    font: bold 0.8em Rubik;
+}
+
+button#resetButton {
+    width: 80%;
+    height: 55px;
+    margin: 8px;
+    padding: 9px;
+    font: bold 1.2em PoetsenOne;
+}
+
+button#feedback {
+    width: 80%;
+    height: 55px;
+    margin: 8px;
+    padding: 9px;
+    font: bold 1.2em RobotoSlab;
+}
+
+p.rightAns {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+p.wrongAns {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}

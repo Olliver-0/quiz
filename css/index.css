@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Rubik;
+    src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: PoetsenOne;
+    src: url(../fonts/Poetsen_One/PoetsenOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoSlab;
+    src: url(../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+
+:root {
+    --lightpink: #EA7AF4;
+    --pink: #B43E8F;
+    --purple: #6200B3;
+    --purpletransparent: #6200b3d8;
+    --darkpurple: #3B0086;
+    --deeppurple: #290628;
+    --yellow: #FDE74C;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 1em;
+	font: inherit;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+
+body {
+    background: url(../img/purple_background.png) no-repeat fixed center / cover;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, var(--deeppurple),var(--darkpurple), rgba(128, 0, 128, 0));
+}
+
+h1 {
+    font: normal 700 3.2em PoetsenOne;
+    letter-spacing: 3px;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    color: var(--lightpink);
+    cursor: default;
+}
+
+h1 > span, main span {
+    text-shadow: 2px 2px 3px var(--pink);
+    color: var(--yellow);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 370px;
+    margin-top: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 55px;
+    margin: 10px;
+    padding: 9px;
+    background-color: var(--darkpurple);
+    border: 4px solid var(--purple);
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+nav > a {
+    font: bold 1.7em Rubik;
+    text-shadow: 0px 0px 10px var(--pink);
+    color: var(--lightpink);
+}
+
+footer {
+    text-align: center;
+    text-shadow: 2px 2px 3px var(--pink);
+    color: var(--yellow);
+}
+
+.Btn {
+    margin: auto;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .4s;
+    cursor: pointer;
+    position: relative;
+    background-color: var(--deeppurple);
+    overflow: hidden;
+}
+  
+.svgIcon {
+    transition-duration: .3s;
+}
+  
+.svgIcon path {
+    fill: white;
+}
+  
+.text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: .4s;
+}
+  
+.Btn:hover {
+    width: 110px;
+    transition-duration: .4s;
+    border-radius: 30px;
+}
+  
+.Btn:hover .text {
+    opacity: 1;
+    transition-duration: .4s;
+}
+  
+.Btn:hover .svgIcon {
+    opacity: 0;
+    transition-duration: .3s;
+}
+
+p {
+    font: normal 600 1em Rubik;
+}
+
+a {
+    font: normal 600 1em Rubik;
+}
+
+span > a:active {
+    color: var(--yellow);
+}
+
+span > a:visited {
+    color: var(--yellow);
+}

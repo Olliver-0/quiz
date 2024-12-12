@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Rubik;
+    src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: PoetsenOne;
+    src: url(../fonts/Poetsen_One/PoetsenOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoSlab;
+    src: url(../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+
+:root {
+    --lightpink: #EA7AF4;
+    --pink: #B43E8F;
+    --purple: #6200B3;
+    --purpletransparent: #6200b3d8;
+    --darkpurple: #3B0086;
+    --deeppurple: #290628;
+    --yellow: #FDE74C;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 1em;
+	font: inherit;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+
+body {
+    background: url(../img/purple_background.png) no-repeat fixed center / cover;
+}
+
+header {
+    display: flex;
+    background-image: linear-gradient(to bottom, var(--deeppurple),var(--darkpurple), rgba(128, 0, 128, 0));
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    color: var(--lightpink);
+    cursor: default;
+}
+
+h1 > span, main span {
+    text-shadow: 2px 2px 3px var(--pink);
+    color: var(--yellow);
+}
+
+div#exProgressBar {
+    overflow: hidden;
+    background-color: var(--purple);
+    border: 3px solid var(--deeppurple);
+}
+  
+div#inProgressBar {
+    background-image: linear-gradient(to bottom, var(--yellow), var(--lightpink));
+    transition: width 1s ease-out;
+}
+
+main {
+    display: flex;
+    background-image: linear-gradient(to bottom, var(--purpletransparent), var(--deeppurple));
+    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    color: var(--lightpink);
+    cursor: default;
+}
+
+p.question {
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    color: var(--lightpink);
+}
+
+button.options {
+    background-color: var(--pink);
+    border: 4px solid var(--lightpink);
+    border-radius: 14px;
+    hyphens: auto;
+    overflow: hidden;
+    color: var(--deeppurple);
+    cursor: pointer;
+}
+
+button#resetButton {
+    display: inline-block;
+    background-color: var(--darkpurple);
+    border: 4px solid var(--purple);
+    border-radius: 14px;
+    overflow: hidden;  
+    text-shadow: 0px 0px 10px var(--pink);
+    color: var(--lightpink);
+    cursor: pointer;
+}
+
+button#feedback {
+    background-color: var(--lightpink);
+    border: 4px solid var(--pink);
+    border-radius: 14px;
+    overflow: hidden;  
+    text-shadow: 0px 0px 10px var(--pink);
+    color: var(--purple);
+    cursor: pointer;
+}
+
+section.sectQuestion {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: var(--pink);
+    border: 3px solid var(--lightpink);
+    border-radius: 7px;
+}
+
+section#results > p.question {
+    border-radius: 7px;
+}
+
+p.rightAns {
+    background-color: rgb(0, 80, 0);
+    color: rgb(0, 240, 0);
+}
+
+p.wrongAns {
+    background-color: rgb(80, 0, 0);
+    color: rgb(240, 0, 0);
+}
+
+footer {
+    text-align: center;
+    text-shadow: 2px 2px 3px var(--pink);
+    color: var(--yellow);
+}
+
+.Btn {
+    margin: auto;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .4s;
+    cursor: pointer;
+    position: relative;
+    background-color: var(--deeppurple);
+    overflow: hidden;
+}
+  
+.svgIcon {
+    transition-duration: .3s;
+}
+  
+.svgIcon path {
+    fill: white;
+}
+  
+.text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: .4s;
+}
+  
+.Btn:hover {
+    width: 110px;
+    transition-duration: .4s;
+    border-radius: 30px;
+}
+  
+.Btn:hover .text {
+    opacity: 1;
+    transition-duration: .4s;
+}
+  
+.Btn:hover .svgIcon {
+    opacity: 0;
+    transition-duration: .3s;
+}
+
+p {
+    font: normal 600 1em Rubik;
+}
+
+a {
+    font: normal 600 1em Rubik;
+}
+
+a:active {
+    color: var(--yellow);
+}
+
+a:visited {
+    color: var(--yellow);
+}
