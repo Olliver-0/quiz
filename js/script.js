@@ -20,11 +20,11 @@ function start() { //Função que inicia o código quando o DOM é carregado
         },
         {
             question: 'O Brasil é mais adepto a qual religião<span>?</span>',
-            options: ['Catolicismo', 'Cristianismo', 'Criacionismo', 'Jesus', 'O Brasil é ateu']
+            options: ['Espiritismo', 'Cristianismo', 'Criacionismo', 'Jesus', 'O Brasil é ateu']
         },
         {
             question: 'Em que década o primeiro humano pisou na lua<span>?</span>',
-            options: ['90', '80', '70', '60', '50']
+            options: ['95', '80', '70', '60', '50']
         },
         {
             question: 'Como é chamado quem nasce nos Estados Unidos da América<span>?</span>',
@@ -60,10 +60,10 @@ function start() { //Função que inicia o código quando o DOM é carregado
         },
         {
             question: 'Qual o número oposto a -15<span>?</span>',
-            options: ['0', '--15', '15', '-30', '150']
+            options: ['0', '30', '15', '-30', '150']
         },
         {
-            question: 'Qual não é energia<span>?</span>',
+            question: 'Qual não é um tipo de energia<span>?</span>',
             options: ['Calor', 'Eletricidade', 'Luz', 'Som', 'Matéria']
         },
         {
@@ -100,7 +100,7 @@ function start() { //Função que inicia o código quando o DOM é carregado
         },
         {
             question: 'Quem é Loki<span>?</span>',
-            options: ['Um gigante de gelo', 'Um deus asgardiano', 'Um trapaceiro', 'Um herói', 'Filho de Thor']
+            options: ['Um gigante de gelo', 'Um semideus', 'Filho de Fenrir', 'Pai de Thor', 'Filho de Thor']
         },
         {
             question: 'Durante quanto tempo durou a Guerra dos Cem Anos<span>?</span>',
